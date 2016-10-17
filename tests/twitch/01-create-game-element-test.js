@@ -45,46 +45,46 @@ const itemTwo = {
 // This helps look for all the right stuff within game item elements
 function testUiForItem(el, item, assert, msgPrefix) {
   assert.ok(el instanceof Element,
-    `${msgPrefix}: The game item should be an Element object
-      (see document.createElement)`);
+   `${msgPrefix}: The game item should be an Element object
+     (see document.createElement)`);
   assert.ok(el.classList.contains('game-item'),
-    `${msgPrefix}: The game item element element should have a class 'game-item'`);
+   `${msgPrefix}: The game item element element should have a class 'game-item'`);
 
-  // Check the game name
+ // Check the game name
   const name = el.querySelector('h3.game-item__name');
   assert.ok(name,
-    `${msgPrefix}: The game item contains an element with the class 'game-item__name'`);
+   `${msgPrefix}: The game item contains an element with the class 'game-item__name'`);
   assert.equal(name.innerText.trim(), item.name,
-    `${msgPrefix}: The game item name contains the game item's name from the data`);
+   `${msgPrefix}: The game item name contains the game item's name from the data`);
 
-  // Check the game name
+ // Check the game name
   const gameName = el.querySelector('h4.game-item__popularity');
   assert.ok(gameName,
-    `${msgPrefix}: The game item contains an element with the class 'game-item__popularity'`);
+   `${msgPrefix}: The game item contains an element with the class 'game-item__popularity'`);
   assert.equal(gameName.innerText.trim(), item.popularity,
-    `${msgPrefix}: The game item popularity contains the game item's game name from the data`);
+   `${msgPrefix}: The game item popularity contains the game item's game name from the data`);
 
-  // Check game item picture
+ // Check game item picture
   const pic = el.querySelector('img.game-item__pic');
   assert.ok(pic,
-    `${msgPrefix}: The game item contains an 'img' element with the class 'game-item__pic'`);
+   `${msgPrefix}: The game item contains an 'img' element with the class 'game-item__pic'`);
   assert.equal(pic.getAttribute('src'), item.box.large,
-    `${msgPrefix}: The game item pic has an src from the first Image url`);
+   `${msgPrefix}: The game item pic has an src from the first Image url`);
   assert.equal(pic.getAttribute('alt'), item.name,
-    `${msgPrefix}: The game item pic has an alt from the game item's name`);
+   `${msgPrefix}: The game item pic has an alt from the game item's name`);
 }
 
 import createGameItem from '../../app/twitch/create-game-element';
 
 test('it can create a gameItem element', (assert) => {
-  // Check the game item element
+ // Check the game item element
   const gameItem = createGameItem(itemOne);
 
   testUiForItem(gameItem, itemOne, assert,
-    'Result of createGameItem with itemOne');
+   'Result of createGameItem with itemOne');
 
   const gameItemTwo = createGameItem(itemTwo);
 
   testUiForItem(gameItemTwo, itemTwo, assert,
-    'Result of createGameItem with itemTwo');
+   'Result of createGameItem with itemTwo');
 });
