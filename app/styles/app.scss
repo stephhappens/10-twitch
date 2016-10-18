@@ -1,6 +1,144 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+}
+
+.section {
+  }
+
+.left-side {
+  display: flex;
+  background: #17141f;
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #433f4a;
+  max-width: 15rem;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+
+}
+
+.Twitch-logo {
+  height: 2rem;
+  width: 5rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.search_bar {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  background: #6441a4;
+}
+
+.icon-list {
+  color: #cbc8d0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 1.4rem;
+  padding: .5rem;
+  font-weight: 100;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+
+}
+
+.fa-gamepad {
+  padding: .5rem;
+}
+
+.fa-video-camera {
+  padding: .5rem;
+}
+
+.fa-file-video-o {
+  padding: .5rem;
+}
+
+.fa-star {
+  padding: .5rem;
+}
+
+.middle-section {
+  background: yellow;
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20rem;
+  background: #efeef1;
+  padding-left: 2rem;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-grow: 1;
+  // flex-direction: column;
+  // flex-wrap: nowrap;
+}
+
+.log-in__alert {
+  padding-top: 2rem;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #232127;
+  margin-bottom: 15px;
+
+}
+
+.log-in__instructions {
+  padding-top: 2rem;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  background: white;
+  border-left: 3px solid #6441a4;
+  margin-bottom: 10px;
+}
+
+.log-in {
+  background-color: #6441a4;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+  position: relative;
+
+}
+
+.sign-up {
+  background-color: #6441a4;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+  position: relative;
+}
