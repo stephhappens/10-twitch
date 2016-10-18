@@ -11,8 +11,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-family: Helvetica Neue,Helvetica,sans-serif;
 }
 
-.section {
-  }
+.section {}
 
 .left-side {
   display: flex;
@@ -23,7 +22,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-size: 1.2rem;
   line-height: 2rem;
   color: #433f4a;
-  max-width: 15rem;
+  max-width: 20rem;
   font-family: Helvetica Neue,Helvetica,sans-serif;
 
 }
@@ -47,27 +46,114 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   padding: 0;
   position: relative;
   font-size: 1.4rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: 100;
   font-family: Helvetica Neue,Helvetica,sans-serif;
 
 }
 
 .fa-gamepad {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .fa-video-camera {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .fa-file-video-o {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .fa-star {
-  padding: .5rem;
+  padding: 0.5rem;
 }
+
+.side-header {
+  color: #cbc8d0;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.thumbnail-image {
+  margin-bottom: 1rem;
+  width: 200px;
+  padding-left: 1rem;
+}
+
+figcaption {
+  color: #cbc8d0;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+h6 {
+  color: #cbc8d0;
+
+}
+
+.recommended-channels {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  width: 100%;
+
+}
+
+.channel-wrapper {
+    color: #cbc8d0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.channel-icon {
+  margin-right: 1rem;
+  max-height: 3rem;
+  width: 3rem;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.channel-name {
+  display: block;
+  flex: 1 1 auto;
+  line-height: 1.5rem;
+  min-width: 0;
+}
+
+.channel-streaming {
+  display: block;
+  flex: 1 1 auto;
+  line-height: 1.5rem;
+  min-width: 0;
+}
+
+.bottom-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.bottom-nav__items {
+  flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+}
+
+.bottom-nav_items__options {
+    font-size: .5rem;
+    width: 50%;
+    color: #cbc8d0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
 
 .middle-section {
   background: yellow;
@@ -81,7 +167,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   width: 20rem;
   background: #efeef1;
   padding-left: 2rem;
-  // min-height: 100vh;
+  min-height: 100vh;
   // display: flex;
   // flex-grow: 1;
   // flex-direction: column;
@@ -103,17 +189,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-size: 14px;
 }
 
-ul {
+.user-options {
   list-style: none;
-}
 
-li {
+&-li {
   display: inline-block;
   padding: 0 10px;
   line-height: 30px;
   background: white;
   border-left: 3px solid #6441a4;
   margin-bottom: 10px;
+}
 }
 
 .log-in {
