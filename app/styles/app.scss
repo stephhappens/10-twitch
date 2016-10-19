@@ -10,11 +10,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   padding: 0;
   font-family: Helvetica Neue,Helvetica,sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: row;
   // justify-content: space-around;
 }
+
 .section {}
 
 .left-side {
@@ -24,36 +26,60 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-size: 1.2rem;
-  line-height: 2rem;
+  // line-height: 2rem;
   color: #433f4a;
   max-width: 20rem;
   font-family: Helvetica Neue,Helvetica,sans-serif;
+  padding-left: 1rem;
 
 }
 
 .Twitch-logo {
-  height: 2rem;
-  width: 5rem;
+  height: 3rem;
+  width: 8rem;
   margin-left: 4rem;
   margin-top: 2rem;
 }
 
 .search_bar {
-  margin-left: 2rem;
-  margin-top: 2rem;
-  background: #6441a4;
+  margin: 1rem 0;
+  display: flex;
+  width: 75%;
+
+  &-input {
+    width: 100%;
+    background-color: #201c2b;
+    box-shadow: #392e5c 0 0 0 0 inset;
+    color: #dad8de;
+    border-top: .1rem solid #392e5c;
+    border-bottom: .1rem solid #392e5c;
+    border-right: .1rem solid #392e5c;
+    border-left: none;
+    font-size: .6em;
+    padding-left: .5rem;
+  }
+}
+
+.fa-search {
+  color: #cbc8d0;
+  background-color: #201c2b;
+  border-left: .1rem solid #392e5c;
+  border-top: .1rem solid #392e5c;
+  border-bottom: .1rem solid #392e5c;
+  padding: .3rem;
+
 }
 
 .icon-list {
   color: #cbc8d0;
   margin: 0;
-  padding: 0;
   position: relative;
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  font-weight: 100;
-  font-family: Helvetica Neue,Helvetica,sans-serif;
+}
 
+.icon {
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
 .fa-gamepad {
@@ -74,40 +100,60 @@ body {
 
 .side-header {
   color: #cbc8d0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 1.5rem 0 1rem;
+  border-bottom: 0.1rem solid #6441a4;
+  justify-content: space-between;
+}
+
+.fa-caret-down {
+  padding-left: 7rem;
+}
+
+.prime {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+&-title {
+
+}
+  &-subtitle {
+    color: #cbc8d0;
+    font-size: 0.8rem;
+    text-decoration: none;
+    flex-direction: row;
+  }
 }
 
 .thumbnail-image {
-  margin-bottom: 1rem;
-  width: 200px;
-  padding-left: 1rem;
+  max-height: 3rem;
+  width: 3rem;
+  padding-bottom: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 figcaption {
   color: #cbc8d0;
-  font-size: 1.2rem;
-  margin: 1.5rem 0 1rem;
-}
-
-h6 {
-  color: #cbc8d0;
-
+  font-size: 0.9rem;
+  // margin: 1.5rem 0 1rem;
 }
 
 .recommended-channels {
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   width: 100%;
 
 }
 
 .channel-wrapper {
-    color: #cbc8d0;
-    margin: 0;
-    padding: 0;
-    position: relative;
+  color: #cbc8d0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .channel-icon {
@@ -124,16 +170,15 @@ h6 {
 
 .channel-name {
   display: block;
-  flex: 1 1 auto;
   line-height: 1.5rem;
   min-width: 0;
 }
 
 .channel-streaming {
   display: block;
-  flex: 1 1 auto;
-  line-height: 1.5rem;
-  min-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bottom-nav {
@@ -141,26 +186,30 @@ h6 {
   flex-wrap: wrap;
   font-size: 1.1rem;
   margin-bottom: 2rem;
+
 }
 
 .bottom-nav__items {
   flex-direction: row;
-      flex-wrap: wrap;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  list-style-type: none;
+
 }
 
 .bottom-nav_items__options {
-    font-size: .5rem;
-    width: 50%;
-    color: #cbc8d0;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
+  width: 50%;
+  color: #cbc8d0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 
 .middle-section {
-  background: yellow;
+  display: flex;
+  width: 50%;
 }
 
 .right-side {
@@ -196,14 +245,14 @@ h6 {
 .user-options {
   list-style: none;
 
-&-li {
-  display: inline-block;
-  padding: 0 10px;
-  line-height: 30px;
-  background: white;
-  border-left: 3px solid #6441a4;
-  margin-bottom: 10px;
-}
+  &-li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+    background: white;
+    border-left: 3px solid #6441a4;
+    margin-bottom: 10px;
+  }
 }
 
 .log-in {
