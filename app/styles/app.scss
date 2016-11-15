@@ -28,6 +28,11 @@ img {
   max-width: 100%;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .middle-section {
   display: flex;
   width: 55%;
