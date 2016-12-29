@@ -15,8 +15,9 @@
 .Twitch-logo {
   height: 3rem;
   width: 8rem;
-  margin-left: 4rem;
-  margin-top: 2rem;
+  display: flex;
+  margin: .5rem;
+  align-self: center;
 }
 
 .search_bar {
