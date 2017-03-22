@@ -1,0 +1,64 @@
+
+.right-side {
+  width: 25%;
+  background: #efeef1;
+  padding-left: 2rem;
+  min-height: 100vh;
+}
+
+.log-in__alert {
+  padding-top: 2rem;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #232127;
+  margin-bottom: 15px;
+
+}
+
+.log-in__instructions {
+  padding-top: 2rem;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.user-options {
+  list-style: none;
+
+  &-li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+    background: white;
+    border-left: 3px solid #6441a4;
+    margin-bottom: 10px;
+  }
+}
+
+.log-in {
+  background-color: #6441a4;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+  position: relative;
+  border: none;
+
+}
+
+.sign-up {
+  background-color: #6441a4;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+  position: relative;
+  border: none;
+}
